@@ -1,29 +1,27 @@
 {
-  "name": "championship",
+  "name": "match",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "string"
-    },
-    "startDate": {
-      "type": "date"
-    },
-    "endDate": {
+    "matchDate": {
       "type": "date"
     }
   },
   "validations": [],
   "relations": {
-    "teams": {
-      "type": "hasAndBelongsToMany",
+    "visit": {
+      "type": "belongsTo",
+      "model": "team",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "local": {
+      "type": "belongsTo",
       "model": "team",
       "foreignKey": "",
       "options": {

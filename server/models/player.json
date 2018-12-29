@@ -1,5 +1,5 @@
 {
-  "name": "championship",
+  "name": "player",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,13 +10,13 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "biography": {
       "type": "string"
     },
-    "startDate": {
-      "type": "date"
+    "img": {
+      "type": "string"
     },
-    "endDate": {
+    "birthDay": {
       "type": "date"
     }
   },

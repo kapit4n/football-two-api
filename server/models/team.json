@@ -1,5 +1,5 @@
 {
-  "name": "championship",
+  "name": "team",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,21 +10,23 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "biography": {
       "type": "string"
-    },
-    "startDate": {
-      "type": "date"
-    },
-    "endDate": {
-      "type": "date"
     }
   },
   "validations": [],
   "relations": {
-    "teams": {
+    "championships": {
       "type": "hasAndBelongsToMany",
-      "model": "team",
+      "model": "championship",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "players": {
+      "type": "hasAndBelongsToMany",
+      "model": "player",
       "foreignKey": "",
       "options": {
         "nestRemoting": true

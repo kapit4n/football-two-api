@@ -38,5 +38,17 @@
   "championship": {
     "dataSource": "db",
     "public": true
+  },
+  "player": {
+    "dataSource": "db",
+    "public": true
+  },
+  "team": {
+    "dataSource": "db",
+    "public": true
+  },
+  "match": {
+    "dataSource": "db",
+    "public": true
   }
 }
