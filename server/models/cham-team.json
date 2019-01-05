@@ -1,0 +1,36 @@
+{
+  "name": "chamTeam",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "isRunning": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "championship": {
+      "type": "belongsTo",
+      "model": "championship",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "team": {
+      "type": "belongsTo",
+      "model": "team",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

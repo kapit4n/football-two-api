@@ -22,14 +22,6 @@
   },
   "validations": [],
   "relations": {
-    "teams": {
-      "type": "hasAndBelongsToMany",
-      "model": "team",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
-    }
   },
   "acls": [],
   "methods": {}
