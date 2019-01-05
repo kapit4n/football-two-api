@@ -1,6 +1,12 @@
 {
   "db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "football-two",
+    "user": "football-two",
+    "password": "password",
     "name": "db",
-    "connector": "memory"
+    "connector": "mongodb"
   }
 }
