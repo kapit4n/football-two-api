@@ -4,9 +4,9 @@
     "port": 27017,
     "url": "",
     "database": "football-two",
-    "user": "football-two",
     "password": "password",
     "name": "db",
+    "user": "football-two",
     "connector": "mongodb"
   }
 }
