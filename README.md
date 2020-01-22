@@ -7,3 +7,8 @@
 - `/players`
 - `/teams`
 - `/Users`
+
+## mongo
+* use footballtwo
+
+* db.createUser({ user: "footballtwo", pwd: "password", roles: [ "readWrite", "dbAdmin" ] });
